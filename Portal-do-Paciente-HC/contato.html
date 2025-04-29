@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contato - Portal do Paciente HC</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
   <header>
@@ -12,34 +12,30 @@
       <h1>Portal do Paciente HC</h1>
       <nav aria-label="Menu principal">
         <ul>
-          <li><a href="index.html" class="nav-link">Início</a></li>
-          <li><a href="integrantes.html" class="nav-link">Integrantes</a></li>
-          <li><a href="faq.html" class="nav-link">FAQ</a></li>
-          <li><a href="contato.html" class="nav-link">Contato</a></li>
-          <li><a href="teleconsultas.html" class="nav-link">Teleconsultas</a></li>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="teleconsultas.html">Teleconsultas</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section>
-      <div class="container">
-        <h2>Entre em Contato</h2>
-        <form action="#" method="post">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required>
+  <main class="container">
+    <h2>Entre em Contato</h2>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
 
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" required>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
 
-          <label for="mensagem">Mensagem:</label>
-          <textarea id="mensagem" name="mensagem" required></textarea>
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" required></textarea>
 
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
-    </section>
+      <button type="submit">Enviar</button>
+    </form>
   </main>
 
   <footer>
@@ -47,5 +43,7 @@
       <p>&copy; 2025 Portal do Paciente HC. Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <script src="js/scripts.js"></script>
 </body>
 </html>
