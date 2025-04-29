@@ -31,3 +31,39 @@ O **Instituto de Medicina Física e Reabilitação (IMREA)** do Hospital das Cl�
 ## Objetivos do IMREA
 
 O Instituto busca desenvolver o potencial físico, psicológico, social, profissional e educacional dos pacientes, promovendo a reintegração dessas pessoas à sociedade e ao mercado de trabalho.
+
+## 🎯 Objetivo do Projeto
+
+Desenvolver um site institucional com informações úteis para pacientes do Hospital das Clínicas, promovendo acessibilidade digital, orientação sobre serviços disponíveis e apresentação dos integrantes do projeto.
+
+---
+
+## 📁 Estrutura de Pastas e Arquivos
+
+Challenge-2025/
+├── index.html                    
+└── Portal-do-Paciente-HC/
+    ├── integrantes.html         
+    ├── faq.html                 
+    ├── contato.html             
+    ├── teleconsultas.html       
+    ├── css/
+    │   └── style.css            
+    └── js/
+        └── script.js            
+
+
+## 💻 Tecnologias Utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+
+## 👤 Integrante
+
+- Gustavo Gomes Martins  
+  - RM: 555999
+
+## 🔗 Repositório no GitHub
+
+[https://github.com/gugomesx10/Challenge-2025.git](https://github.com/gugomesx10/Challenge-2025.git)
