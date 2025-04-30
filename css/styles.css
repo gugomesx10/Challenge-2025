@@ -1,191 +1,269 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
-  }
-  
-  header {
-    background-color: #007BFF;
-    padding: 40px 0 60px;
-    text-align: center;
-  }
-  
-  .header-box {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
-  header h1 {
-    font-size: 2.5rem;
-    color: #007BFF;
-    margin-bottom: 20px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+header {
+  background-color: #007BFF;
+  padding: 40px 0 60px;
+  text-align: center;
+}
+
+.header-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #007BFF;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  text-align: center;  
+}
+
+h2 {
+  color: #007BFF;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+p, li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #007BFF;
+  color: black;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+  font-size: 0.95rem;
+}
+
+.cta {
+  background-color: #f0f4f8;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background-color: #0056b3;
+}
+
+.social-links {
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.social-icons a {
+  margin: 0 15px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+.social-links h2 {
+  font-size: 1.8rem;
+  color: #007BFF;
+  margin-bottom: 15px;
+}
+
+#agendamento-btn {
+  margin-top: 30px;
+  background-color: #007BFF;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+#agendamento-btn:hover {
+  background-color: #0056b3;
+}
+
+#agendamento-section {
+  margin-top: 30px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#agendamento-section h2 {
+  font-size: 2rem;
+  color: #007BFF;
+}
+
+#agendamento-section p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
   nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 0;
-  }
-  
-  nav ul li a {
-    color: #007BFF;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: bold;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  .container {
-    max-width: 1000px;
-    margin: 30px auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  }
-  
-  h2 {
-    color: #007BFF;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-  }
-  
-  p, li {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-    border-radius: 8px;
-  }
-  
-  form {
-    display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
+    gap: 10px;
   }
-  
-  form input,
-  form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
+
+  .header-box {
+    padding: 20px;
   }
-  
-  form button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 12px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  form button:hover {
-    background-color: #0056b3;
-  }
-  
-  footer {
-    background-color: #007BFF;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 50px;
-    font-size: 0.95rem;
-  }
-  
-  .cta {
-    background-color: #f0f4f8;
-    padding: 30px 0;
-    text-align: center;
-  }
-  
-  .cta h2 {
-    font-size: 2rem;
-    color: #007BFF;
-    margin-bottom: 10px;
-  }
-  
-  .cta p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  
+
   .cta-btn {
-    background-color: #007BFF;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 25px;
   }
-  
-  .cta-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .social-links {
-    background-color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .social-icons a {
-    margin: 0 15px;
-  }
-  
+
   .social-icons img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
-  
-  .social-links h2 {
-    font-size: 1.8rem;
-    color: #007BFF;
-    margin-bottom: 15px;
+
+  #agendamento-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
   }
-  
-  @media (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .header-box {
-      padding: 20px;
-    }
-  
-    .cta-btn {
-      font-size: 1rem;
-      padding: 10px 25px;
-    }
-  
-    .social-icons img {
-      width: 30px;
-      height: 30px;
-    }
-  }
-  
+}
+
+.integrante-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  gap: 20px;
+  text-align: center; 
+}
+
+.integrante-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #007BFF;
+}
+
+.integrante-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 15px;
+}
+
+.integrante-info li {
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: #f2f8ff;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #007BFF;
+  width: fit-content;
+  margin-top: 10px;
+  text-align: center;
+  color: #007BFF;
+}
+
+

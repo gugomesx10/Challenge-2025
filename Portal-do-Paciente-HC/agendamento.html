@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Integrantes - Portal do Paciente HC</title>
+  <title>Agendamento Online</title>
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
   <header>
-    <div class="container">
+    <div class="container header-box">
       <h1>Portal do Paciente HC</h1>
       <nav aria-label="Menu principal">
         <ul>
@@ -24,14 +24,24 @@
     </div>
   </header>
 
-  <main class="container">
-    <h2>Integrantes do Projeto</h2>
-    <div class="integrante-info">
-      <img src="img/gustavo-gomes-martins.jpg" alt="Foto de Gustavo Gomes Martins" class="integrante-img">
-      <ul>
-        <li>Gustavo Gomes Martins - RM: 555999</li>
-      </ul>
-    </div>
+  <main>
+    <section class="container">
+      <h2>Central de Agendamento Online</h2>
+      <p>Faça seu cadastro e agende sua consulta de forma rápida e prática. Atendimento disponível de segunda a sábado em diversas especialidades.</p>
+    </section>
+
+    <!-- Cadastro e Login -->
+    <section class="container">
+      <form>
+        <label for="cpf">CPF</label>
+        <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+        <button type="submit">Agendar Online</button>
+      </form>
+    </section>
   </main>
 
   <footer>
