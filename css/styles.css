@@ -58,6 +58,7 @@ nav ul li a:hover {
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  text-align: center;  
 }
 
 h2 {
@@ -227,3 +228,42 @@ footer {
     padding: 10px 20px;
   }
 }
+
+.integrante-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  gap: 20px;
+  text-align: center; 
+}
+
+.integrante-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #007BFF;
+}
+
+.integrante-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 15px;
+}
+
+.integrante-info li {
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: #f2f8ff;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #007BFF;
+  width: fit-content;
+  margin-top: 10px;
+  text-align: center;
+  color: #007BFF;
+}
+
+
