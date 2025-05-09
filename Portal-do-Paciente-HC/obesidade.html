@@ -20,7 +20,6 @@
           <li><a href="obesidade.html">Obesidade</a></li>
           <li><a href="agendamento.html">Agendamento</a></li>
           <li><a href="informacoes-institucionais.html">Informações Institucionais</a></li>
-
         </ul>
       </nav>
     </div>
@@ -42,15 +41,17 @@
       <h2>Calcule seu IMC (Índice de Massa Corporal)</h2>
       <p>O IMC é uma medida importante para avaliar se você está dentro do peso saudável ou se precisa de cuidados médicos. Utilize nossa ferramenta para calcular o seu IMC.</p>
 
-      <form>
+      <form id="imcForm">
         <label for="altura">Altura (cm):</label>
-        <input type="number" id="altura" name="altura" required>
+        <input type="number" id="altura" name="altura" required placeholder="Exemplo: 178">
 
         <label for="peso">Peso (Kg):</label>
-        <input type="number" id="peso" name="peso" required>
+        <input type="number" id="peso" name="peso" required placeholder="Exemplo: 70">
 
         <button type="submit">Calcular IMC</button>
       </form>
+
+      <div id="resultadoIMC"></div>
     </section>
   </main>
 
@@ -59,5 +60,36 @@
       <p>&copy; 2025 Portal do Paciente HC. Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <script>
+    document.getElementById("imcForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+
+      const altura = parseFloat(document.getElementById("altura").value) / 100; 
+      const peso = parseFloat(document.getElementById("peso").value);
+
+      
+      if (isNaN(altura) || isNaN(peso) || altura <= 0 || peso <= 0) {
+        document.getElementById("resultadoIMC").innerHTML = "<span style='color: red;'>Insira valores válidos.</span>";
+        return;
+      }
+
+      const imc = peso / (altura * altura);
+      let classificacao = "";
+
+      if (imc < 18.5) {
+        classificacao = "Abaixo do peso";
+      } else if (imc < 24.9) {
+        classificacao = "Peso normal";
+      } else if (imc < 29.9) {
+        classificacao = "Sobrepeso";
+      } else {
+        classificacao = "Obesidade";
+      }
+
+      
+      document.getElementById("resultadoIMC").innerHTML = `<p>Seu IMC é ${imc.toFixed(2)}. Classificação: ${classificacao}</p>`;
+    });
+  </script>
 </body>
 </html>
